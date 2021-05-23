@@ -16,5 +16,5 @@ regions_token = REGIONS_API_KEY
 countries_api = COUNTRIES_API
 
 
-from app import models
-from app.routes import *
+from app import models, routes
+
