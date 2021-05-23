@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<p>Total time = {{ total }} (seconds)</p>
+<p>Minimum time = {{ minimum }} (seconds)</p>
+<p>Max time = {{ max }} (seconds)</p>
+<p>Average time = {{ avg }} (seconds)</p>
+
+<table>
+    <tr>
+        {% for col in column_names %}
+        <th>{{col}}</th>
+        {% endfor %}
+    </tr>
+    {% for row in row_data %}
+    <tr>
+        {% for col, row_ in zip(column_names, row) %}
+        <td>{{row_}}</td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+
+</table>
+
+{% endblock %}
