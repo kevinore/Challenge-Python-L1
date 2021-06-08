@@ -1,6 +1,6 @@
 ### Challenge
 
-I hope do you like my project :)
+I hope you like my project :)
 
 
 Thanks
